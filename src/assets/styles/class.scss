@@ -1,0 +1,24 @@
+@use 'fonts.scss';
+
+.container {
+	max-width: 90vw;
+	padding: 0 5px;
+	margin: 0 auto;
+	position: relative;
+
+	@media (max-width: 768px) {
+		max-width: 100%;
+	}
+}
+
+%Button__HA {
+	&:hover {
+		background-size: 100% 150%;
+		background-position: 0 80%;
+	}
+
+	&:active {
+		background-size: 100% 150%;
+		background-position: 0 100%;
+	}
+}
